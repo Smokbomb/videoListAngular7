@@ -1,0 +1,84 @@
+html {
+    font-family: 'Open Sans', Arial;
+  }
+  ul {
+
+    padding: 0 1%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  ul li {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 340px;
+    margin: 8px 1%;
+    box-sizing: border-box;
+  }
+  ul li img {
+    width: 340px;
+  }
+  ul li span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0,0.7);
+    width: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 0;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  ul li:hover span {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50% 0;
+  }
+  ul li h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 999px;
+    left: 0;
+    padding: 40% 2%;
+    text-align: center;
+    width: 96%;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  ul li:hover h2 {
+    top: 0;
+  }
+  ul li  {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+  }
+  ul li.navigation div {
+    background: #ddd;
+    text-align: center;
+    padding: 39% 0;
+    font-size: 30px;
+  }
+  ul li.navigation .fa {
+    color: #aaa;
+    text-shadow: 1px 1px 1px #fff;
+  }
+  ul li.navigation a .fa {
+      color: #888;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  } 
+  ul li.navigation a:hover .fa {
+    color: #78AB46;
+  }

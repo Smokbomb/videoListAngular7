@@ -1,0 +1,28 @@
+<!-- <mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let item of videoList; let i = index"  >
+      <figure>
+          <img src = "{{item.thumb}}">
+          <figcaption><span style="float:left">{{item.title}}</span> <span style="float:right"> View : {{item.view}}  Like :{{item.like}} </span></figcaption>
+      </figure>
+  </mat-grid-tile>
+</mat-grid-list> -->
+
+
+<div>
+    <ul>
+        
+        <li *ngFor="let item of videoList; let i = index " >
+        <div [routerLink]="['/videoDetail/'+item._id]" >
+            <img src="{{item.thumb}}">
+            <span></span>
+            <h2>
+                {{item.title}} <br> View : {{item.view}}  Like :{{item.like}} 
+            </h2>
+        </div>
+            
+   
+        </li>
+       
+      </ul>	
+</div>
+  
